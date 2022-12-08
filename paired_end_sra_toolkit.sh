@@ -6,7 +6,7 @@ echo $1
 
 prefetch $1 &&
 
-fasterq-dump $1 -I --split-files --gzip &&
+fasterq-dump $1 -I --split-files --skip-technical &&
 
 echo "Process complete" &&
 
